@@ -13,7 +13,7 @@
 }
 
 body {
-    background-color: var (--primary-white-color);
+    background-color: var(--primary-white-color);
     color: var(--primary-text-color);
     font-family: var(--primary-font-family);
     letter-spacing: 0.03em;
@@ -269,9 +269,11 @@ header {
 
 .features-icon-bcg {
     display: flex;
+    height: 120px;
+    align-items: center;
     background-color: var(--secondary-bg-color);
-    padding-top: 25px;
-    padding-bottom: 25px;
+    /* padding-top: 25px;
+    padding-bottom: 25px; */
     margin-bottom: 30px;
     border-radius: 4px;
 }
@@ -288,7 +290,7 @@ margin-right: 0;
 
 .feature-name {
     margin-top: 0;
-    margin-bottom: 10 px;
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -391,7 +393,9 @@ margin-right: 0;
     justify-content: center;
 }
 
-.member-social-net-item {}
+.member-social-net-item:not(:last-child) {
+    margin-right: 10px;
+}
 
 .member-social-net-link {
     display: flex;
